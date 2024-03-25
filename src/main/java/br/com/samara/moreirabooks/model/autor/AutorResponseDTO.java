@@ -9,4 +9,9 @@ public record AutorResponseDTO(
 
         LocalDate dataCadastro
 ) {
+    public AutorResponseDTO(Autor autor) {
+        this(autor.getNome(), autor.getDataCadastro(),autor.getDataNascimento());
+    }
+
+
 }
