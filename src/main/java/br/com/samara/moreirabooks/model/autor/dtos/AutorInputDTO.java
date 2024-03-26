@@ -1,4 +1,4 @@
-package br.com.samara.moreirabooks.model.autor;
+package br.com.samara.moreirabooks.model.autor.dtos;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Past;

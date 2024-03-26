@@ -1,4 +1,6 @@
-package br.com.samara.moreirabooks.model.autor;
+package br.com.samara.moreirabooks.model.autor.dtos;
+
+import br.com.samara.moreirabooks.model.autor.Autor;
 
 import java.time.LocalDate;
 

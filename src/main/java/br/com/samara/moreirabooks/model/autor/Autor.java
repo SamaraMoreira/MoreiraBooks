@@ -1,5 +1,7 @@
 package br.com.samara.moreirabooks.model.autor;
 
+import br.com.samara.moreirabooks.model.autor.dtos.AutorInputDTO;
+import br.com.samara.moreirabooks.model.autor.dtos.AutorUpdateDTO;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
