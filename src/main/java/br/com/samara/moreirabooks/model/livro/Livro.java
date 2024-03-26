@@ -1,6 +1,8 @@
 package br.com.samara.moreirabooks.model.livro;
 
 import br.com.samara.moreirabooks.model.autor.Autor;
+import br.com.samara.moreirabooks.model.livro.dtos.LivroInputDTO;
+import br.com.samara.moreirabooks.model.livro.dtos.LivroUpdateDTO;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,4 +32,17 @@ public class Livro {
     private Genero genero;
 
     private LocalDate dataLancamento;
+
+    public Livro(LivroInputDTO livroDTO) {
+        this.nome = livroDTO.nome();
+        this.descricao = livroDTO.descricao();
+        this.valor = livroDTO.valor();
+        this.genero = livroDTO.genero();
+        this.dataLancamento = LocalDate.now();
+    }
+
+    public void update(LivroUpdateDTO livroUpdateDTO) {
+        this.descricao = livroUpdateDTO.descricao();
+        this.valor = livroUpdateDTO.valor();
+    }
 }
