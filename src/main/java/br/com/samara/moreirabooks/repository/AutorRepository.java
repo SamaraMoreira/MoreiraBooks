@@ -1,4 +1,4 @@
-package br.com.samara.moreirabooks.repository.autor;
+package br.com.samara.moreirabooks.repository;
 
 import br.com.samara.moreirabooks.model.autor.Autor;
 import org.springframework.data.jpa.repository.JpaRepository;
